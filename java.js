@@ -1,8 +1,70 @@
+
+const arrayProducto = [{
+    codigo: 1,
+    producto: "Cerveza",
+    marca: "Andres",
+    precio: 600
+},
+{
+    codigo: 2,
+    producto: "Cerveza",
+    marca: "Heineken",
+    precio: 700
+},
+{
+    codigo: 3,
+    producto: "Vino",
+    marca: "Santa Julia",
+    precio: 700
+},
+{
+    codigo: 4,
+    producto: "Gin",
+    marca: "La Fuerza",
+    precio: 2500
+},
+{
+    codigo: 5,
+    producto: "Fernet",
+    marca: "Branca",
+    precio: 2500
+},
+{
+    codigo: 6,
+    producto: "Whisky",
+    marca: "Chivas Regal",
+    precio: 5500
+}
+]
+
+
+let ingresoMenu = prompt(`Ingrese tipo de usuario
+1 - Administrador
+2 - Cliente`
+)
+
+
+
+//Menu administrador//
+
+if (ingresoMenu == 1){
+
+
+let menuAdministrador = prompt(`Ingrese tipo de gestion
+1 - Buscar producto por ID
+2 - Buscar tipo de producto`
+)
+
+    
+//Menu usuario//
+
+if (ingresoMenu == 2){
 let nombreIngresado = prompt("Ingresa tu nombre")
 function pedirNombre(){
     console.log("Tu nombre es $(nombreIngesado)")
 }
-pedirNombre(nombreIngresado)
+
+
 
 let edad = parseInt (prompt("Por favor ingrese su edad"))
 let edadCompleta = parseInt (edad)
@@ -58,8 +120,8 @@ if(verCatalogo =="si"){
             }
             if(optionPago == 2){
                 let comprarCerveza = parseInt(prompt("¿Cuantas cervezas queres comprar?: "))
-                let precioCerveza = costoCerveza * comprarCerveza * interesTarjeta
-                console.log(precioCerveza)
+                let precioCerveza2 = costoCerveza * comprarCerveza * interesTarjeta
+                console.log(precioCerveza2)
                 break
             }
 
@@ -72,8 +134,8 @@ if(verCatalogo =="si"){
             }
             if(optionPago == 2){
                 let comprarFernet = parseInt(prompt("¿Cuantos fernet queres comprar?: "))
-                let precioFernet = costoFernet * comprarFernet * interesTarjeta
-                console.log(precioFernet)
+                let precioFernet2 = costoFernet * comprarFernet * interesTarjeta
+                console.log(precioFernet2)
                 break
             }
             
@@ -86,7 +148,8 @@ if(verCatalogo =="si"){
                 }
                 if(optionPago == 2){
                     let comprarVino = parseInt(prompt("¿Cuantos vinos queres comprar?: "))
-                    let precioVino = costoVino * comprarVino * interesTarjeta
+                    let precioVino2 = costoVino * comprarVino * interesTarjeta
+                    console.log(precioVino2)
                     break
                 }
 
@@ -99,8 +162,8 @@ if(verCatalogo =="si"){
             }
             if(optionPago == 2){
                 let comprarGin = parseInt(prompt("¿Cuantos gin queres comprar?: "))
-                let precioGin = costoGin * comprarGin * interesTarjeta
-                console.log(precioGin)
+                let precioGin2 = costoGin * comprarGin * interesTarjeta
+                console.log(precioGin2)
                 break
             }
 
@@ -114,7 +177,7 @@ if(verCatalogo =="si"){
             if(optionPago == 2){
                 let comprarWhisky = parseInt(prompt("¿Cuantos whiskys queres comprar?: "))
                 let precioWhisky = costoWhisky * comprarWhisky * interesTarjeta
-                console.log(precioWhisky)
+                console.log(precioWhisky2)
                 break
             }
             
@@ -123,5 +186,14 @@ if(verCatalogo =="si"){
             console.log(final)
             break
         }
-    }else {exit}
+
+
+if(verCatalogo =="si"){
+    
+    console.log("funciona")
+}
+
+}else {exit}
 }while (menu)
+}
+}
